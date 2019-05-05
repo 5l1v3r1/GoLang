@@ -1,0 +1,105 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+# [*] Name of the Script: GoLang
+# [*] Description: "Language Translator"
+# [*] Author: JRIC2002
+# [*] Date: 03/05/2019
+
+#COLORS
+
+        export black='\033[1;30m'
+        export red='\033[1;31m'
+        export green='\033[1;32m'
+        export yellow='\033[1;33m'
+        export blue='\033[1;34m'
+        export magenta='\033[1;35m'
+        export cyan='\033[1;36m'
+        export white='\033[0m'
+
+#BANNER
+
+function banner {
+	
+	printf "
+	     $red ____       $yellow _
+	     $red/ ___| ___  $yellow| |    __ _ _ __   __ _
+	    $red| |  _ / _ \ $yellow| |   / _' | '_ \ / _' |
+	    $red| |_| | (_) |$yellow| |__| (_| | | | | (_| |
+	     $red\____|\___/ $yellow|_____\__,_|_| |_|\__, |$white v1.0
+	                                   $yellow|___/
+
+	   $green.:.:.$blue Script encoded by:$white @JRIC2002 $green.:.:.$white
+         $green.:.:.$blue Description:$white Language Translator  $green.:.:.$white
+	"
+
+}
+
+#TRADUCTOR
+
+function traductor {
+	
+	echo ""
+	printf "$green[$white\e001$green]$white Español => English\n"
+	printf "$green[$white\e002$green]$white English => Español\n"
+	printf "$green[$white\e099$green]$white Exit\n"
+	echo ""
+	
+	printf "$green[$white*$green]$yellow Choose an Option:$white"
+	read -p " " opcion
+
+	if [ $opcion = "1" -o $opcion = "01" ]; then
+		clear
+		banner
+		echo ""
+		printf "$cyan Texto:$white"
+		read -p " " texto
+		echo ""
+		printf "$green[$white*$green]$black Traduciendo Texto al Idioma Ingles...\n$white"
+		sleep 3
+		echo ""
+		trans :en "$texto"
+		echo ""
+		printf "Presiona$yellow ENTER$white para volver..."
+		read -p "" 
+		
+		clear
+		banner
+		traductor
+
+	elif [ $opcion = "2" -o $opcion = "02" ]; then
+		clear
+		banner
+		echo ""
+		printf "$cyan Texto:$white"
+		read -p " " texto
+		echo ""
+		printf "$green[$white*$green]$black Traduciendo Texto al Idioma Español...\n$white"
+		sleep 3
+		echo ""
+		trans :es "$texto"
+		echo ""
+		printf "Presiona$yellow ENTER$white para volver..."
+		read -p ""
+
+		clear 
+		banner
+		traductor
+
+	elif [ $opcion = "99" -o $opcion = "exit" ]; then
+		echo ""
+		printf "$red				¡Bye!\n$white"
+		echo ""
+	
+	else 
+		clear
+		banner
+		traductor
+	fi
+
+}
+
+#FUNCIONES
+
+banner
+traductor
+
