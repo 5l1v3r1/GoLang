@@ -23,8 +23,8 @@ printf "$green[$white*$green]$yellow Instalando Paquetes...\n$white"
 echo ""
 sleep 3
 
-apt install unstable-repo
-apt install translate-shell
+apt install unstable-repo -y
+apt install translate-shell -y
 
 echo ""
 printf "                     $blue>> Instalacion Completa <<$white"
