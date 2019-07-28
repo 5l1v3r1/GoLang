@@ -19,7 +19,7 @@
 #INSTALACION DE PAQUETES
 
 echo ""
-printf "$green[$white*$green]$yellow Instalando Paquetes...\n$white"
+printf "$green[$white*$green]$yellow Installing Packages...\n$white"
 echo ""
 sleep 3
 
@@ -27,7 +27,7 @@ apt install unstable-repo -y
 apt install translate-shell -y
 
 echo ""
-printf "                     $blue>> Instalacion Completa <<$white"
+printf "                     $blue>> Installation Complete <<$white"
 echo ""
 sleep 1
 
@@ -47,10 +47,10 @@ function inicio {
         "
 	sleep 1
         echo ""
-        printf "$green[$white#$green]$magenta Desea iniciar GoLang:\n$white"
+        printf "$green[$white#$green]$magenta You want to start GoLang:\n$white"
         echo ""
         sleep 1
-        printf "$green       [$white\e001$green]$yellow Si$white\n"
+        printf "$green       [$white\e001$green]$yellow Yes$white\n"
         echo ""
         printf "$green       [$white\e002$green]$yellow No$white\n"
         echo ""
