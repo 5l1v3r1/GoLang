@@ -29,7 +29,7 @@ GoLang es un script que automatiza el proceso para traducir texto a otro idioma.
 		* chmod +x GoLang
 		* chmod +x install.sh
 
-	4.- Ejecuta el archivo "install.sh", como:
+	4.- Ejecuta el archivo "install.sh".
 		
 		* bash install.sh
 		* ./install.sh
