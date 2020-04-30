@@ -1,20 +1,22 @@
-#!/data/data/com.termux/files/usr/bin/bash
+#!/usr/bin/env bash
 
-# [*] Name of the Script: GoLang
-# [*] Description: "Language Translator"
-# [*] Author: JRIC2002
-# [*] Date: 03/05/2019
+#[*] Name of the script: GoLang
+#[*] Description: "Language Translator"
+#[*] Version: 1.0
+#[*] Author: JRIC2002
+#[*] Installer of the script: GoLang
+#[*] Date of creation: 03/05/2019
+#[*] Date of last update: 30/04/2020
 
 #COLORS
-
-        export black='\033[1;30m'
-        export red='\033[1;31m'
-        export green='\033[1;32m'
-        export yellow='\033[1;33m'
-        export blue='\033[1;34m'
-        export magenta='\033[1;35m'
-        export cyan='\033[1;36m'
-        export white='\033[0m'
+black='\033[1;30m'
+red='\033[1;31m'
+green='\033[1;32m'
+yellow='\033[1;33m'
+blue='\033[1;34m'
+magenta='\033[1;35m'
+cyan='\033[1;36m'
+white='\033[0m'
 
 #INSTALACION DE PAQUETES
 
